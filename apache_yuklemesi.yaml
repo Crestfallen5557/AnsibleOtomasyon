@@ -1,0 +1,10 @@
+  - hosts: all # tüm sunucuları kapsar
+    become: true
+    tasks:
+
+    - name: Bu gorev, apache2 yüklemesini gerçekleştirir.
+      apt:
+        name: apache2
+    - name: Bu gorev, net tools yüklemesini gerçekleştirir.
+      apt:
+        name: net-tools
